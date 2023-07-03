@@ -1,0 +1,63 @@
+<html lang="en">
+
+<!--HEAD OF THE PAGE-->
+
+<head>
+    <!-- <meta charset="UTF-8"> -->
+
+    <!--MEDIAQUERY FOR DIFFERENT SCREEN SIZE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Translate</title>
+
+    <!--EXTERNAL LINKS-->
+    <link rel="icon" href="https://www.googlewatchblog.de/wp-content/uploads/google-translate-logo-1024x1024.png">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+</head>
+
+<!--BODY OF THE PAGE-->
+
+<body>
+    <header>
+        <div class="header-content">
+            <h2>Google Translate</h2>
+            <p>Translate Between Different Languages...</p>
+        </div>
+    </header>
+
+    <section>
+        <div>
+            <textarea name="" id="user-input" cols="30" rows="10" placeholder="Enter Text"></textarea>
+
+            <div class="utils">
+                <select class="input-select">
+
+                </select>
+                <div class="hide">
+                    <i class="fas fa-copy"></i>
+                    <i class="fas fa-check-circle"></i>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <textarea name="" id="translate-input" cols="30" rows="10" placeholder="Translation"></textarea>
+
+            <div class="utils">
+                <select class="translate-select">
+
+                </select>
+                <div class="icons">
+                    <button class="copy-btn"><i class="fas fa-copy" id="copy"></i></button>
+                    <button class="check-btn hide"><i class="fas fa-check-circle"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--LINKING JS WITH HTML-->
+    <script type="module" src="/src/index.js"></script>
+</body>
+
+</html>

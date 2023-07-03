@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+
+body {
+    background-image: url('/src/img/googleTranslate.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header div {
+    margin: 2em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.header-content h2 {
+    font-size: 2rem;
+    font-family: Caprasimo, sans-serif;
+    color: #fff;
+    text-shadow: 2px 1px #000
+}
+.header-content p {
+    font-size: 0.7rem;
+    font-style: italic;
+    display: flex;
+    align-self: end;
+    text-align: end;
+    color: #fff;
+    text-shadow: 2px 1px #000
+}
+section {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    justify-content: center;
+    margin: auto;
+    gap: 2rem;
+    margin-top: 4rem;
+    backdrop-filter: blur(5px);
+    height: 50%;
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+}
+.utils {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem
+}
+textarea {
+    resize: none; 
+    padding: 10px; 
+    font-weight: bolder;
+    width: 100%;
+    height: 200px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    outline: none;
+}
+textarea::placeholder {
+    font-family: Quicksand, sans-serif;
+    opacity: 0.5
+}
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 20px
+}
+.hide {
+    display: none
+}
+
+@media screen and (max-width: 500px) {
+    section {
+        flex-direction: column;
+        height: 80%;
+        margin-top: 1rem;
+        width: 70%;
+    }
+    textarea {
+        height: 150px;
+        width: 70%;
+        margin: auto;
+        display: flex;
+    }
+    .utils {
+        width: 70%;
+        margin: auto;
+        margin-top: 0.5rem
+    }
+}
+
